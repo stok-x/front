@@ -1,18 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RouterView
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '~@/../mdb/scss/index.free.scss';
+
+#app {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
 </style>
